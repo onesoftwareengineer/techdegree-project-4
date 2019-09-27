@@ -4,7 +4,7 @@ class Player {
         this.id = id;
         this.color = color; 
         this.active = active;
-        this.tokens = [];
+        this.tokens = this.createTokens(21);
     }
 
     createTokens (num) {
@@ -15,5 +15,5 @@ class Player {
         }
         return tokens;
     }
-    
+
 }
