@@ -11,7 +11,7 @@
 
     /**
     * Creates phrases for use in game
-    * @return {array} An array of phrases that could be used in the game
+    * @return {array} An array of phrase objects that could be used in the game
     */
     createPhrases() {
         const phrases = [
@@ -122,9 +122,18 @@
     */
     gameReset() {
         //Remove all li elements from the Phrase ul element
-        //Enable all of the onscreen keyboard buttons
-        //and update each to use the key CSS class, and not use the chosen or wrong CSS classes
+        document.querySelectorAll('div#phrase ul li').forEach(element => {
+            element.remove();
+        });
+        //Enable all of the onscreen keyboard buttons and update each to use the key CSS class, and not use the chosen or wrong CSS classes
+        document.querySelectorAll('.key').forEach(element => {
+            element.className = 'key';
+            element.removeAttribute('disabled');
+        });
         //Reset all of the heart images (i.e. the player's lives) in the scoreboard at the bottom of the gameboard to display the liveHeart.png image
+        document.querySelectorAll('li.tries img').forEach(element => {
+            element.setAttribute('src','images/liveHeart.png') ;
+        });
     }
 }
 
