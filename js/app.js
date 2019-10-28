@@ -1,10 +1,17 @@
 /* Treehouse FSJS Techdegree
  * Project 4 - OOP Game App
  * app.js */
+//game initialized as global variable
+let game;
 
-const game = new Game();
-const phrase = new Phrase(game.getRandomPhrase().phrase);
-phrase.addPhraseToDisplay();
+document.getElementById('btn__reset').addEventListener('click', () => {
+    game = new Game();
+    game.startGame(); 
+    console.log(game);
+});
+
+
+
 
 // game.phrases.forEach( (phrase, index) => {
 //     console.log(`phrase ${index} : ${phrase.phrase}`);     

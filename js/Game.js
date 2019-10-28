@@ -33,5 +33,25 @@
         return this.phrases[randomIndex];
     };
 
+    /**
+    * Begins game by selecting a random phrase and displaying it to user
+    */
+    startGame() {
+        document.querySelector('div#overlay').style.display = 'none';
+        const phrase = new Phrase(game.getRandomPhrase().phrase);
+        this.activePhrase = phrase.phrase;
+        phrase.addPhraseToDisplay();
+    }
+
+    /**
+    * Handles onscreen keyboard button clicks
+    * @param (HTMLButtonElement) button - The clicked button element
+    */
+    handleInteraction(button) {
+        console.log(button);
+    };
+
+    
+
 }
 
