@@ -10,13 +10,8 @@ document.getElementById('btn__reset').addEventListener('click', () => {
     console.log(game);
 });
 
-
-
-
-// game.phrases.forEach( (phrase, index) => {
-//     console.log(`phrase ${index} : ${phrase.phrase}`);     
-// });
-
-// for(let x=0; x<10; x++) {
-//     console.log(game.getRandomPhrase().phrase);
-// };
+document.querySelector('div#qwerty').addEventListener('click', (event) => {
+    if(event.target.type === 'submit') {
+        game.handleInteraction(event.target);
+    }
+});

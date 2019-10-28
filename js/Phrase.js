@@ -28,14 +28,18 @@ class Phrase {
     * @param (string) letter - Letter to check
     */
     checkLetter(letter) {
-        return this.indexOf(letter) !== -1 ? true : false;
+        return this.phrase.indexOf(letter) !== -1 ? true : false;
     };
 
     /**
     * Displays passed letter on screen after a match is found
     * @param (string) letter - Letter to display
     */
-    showMatchedLetter(letter) {};
+    showMatchedLetter(letter) {
+        document.querySelectorAll(`.${letter}`).forEach(x => {
+            x.className = `show letter ${letter}`;
+        });
+    };
 
 }
 
