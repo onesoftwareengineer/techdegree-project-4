@@ -48,18 +48,16 @@
     * @param (HTMLButtonElement) button - The clicked button element
     */
     handleInteraction(button) {
+        // Disable the selected letter’s onscreen keyboard button.
+        button.disabled = true;
         // checks to see if the onscreen keyboard button clicked by the player matches a letter in the phrase
         if( this.activePhrase.checkLetter(button.innerText) === false) {
-            // Disable the selected letter’s onscreen keyboard button.
-            button.disabled = true;
-            // adds wrong class to button
+            // adds "wrong" class to button next to the already existing "key" class
             button.className = 'key wrong';
             //remove one life, no need to check if game is over, verification is done in removelife method
             this.removeLife();
         }
         else {
-            // Disable the selected letter’s onscreen keyboard button.
-            button.disabled = true;
             // If the phrase includes the guessed letter, add the `chosen` CSS class to the selected letter's keyboard button
             button.className = 'key chosen';
             this.activePhrase.showMatchedLetter(button.innerText);
