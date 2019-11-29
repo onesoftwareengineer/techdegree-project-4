@@ -13,11 +13,3 @@ If the player completes the phrase before they run out of guesses, a winning scr
 If the player guesses incorrectly five times, a losing screen appears.
 
 A player can guess a letter only once. After they’ve guessed a letter, that letter is disabled on the onscreen keyboard.
-
-
-Additional style changes from initial project specifications:
-game won overlay background color changed to #00A86B
-game lost overlay background color changed to #FA8072
-.chosen key class background color changed to #00A86B
-.wrong key background color changed to #FA8072
-.wrong key style with font striekthrough added
