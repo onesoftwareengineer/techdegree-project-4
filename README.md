@@ -6,14 +6,14 @@ A random hidden phrase is selected which the player tries to guess by clicking l
 JavaScript OOP (Object-Oriented Programming), HTML, CSS
 
 ## Screenshots
-![image](https://raw.githubusercontent.com/onesoftwareengineer/techdegree-project-4/master/screenshot1.JPG)
 *first screen after game is started and a random hidden phrase is generated*
+![image](https://raw.githubusercontent.com/onesoftwareengineer/techdegree-project-4/master/screenshot1.JPG)
 
-![image](https://raw.githubusercontent.com/onesoftwareengineer/techdegree-project-4/master/screenshot2.JPG)
 *user tries to guess letters of the hidden app*
+![image](https://raw.githubusercontent.com/onesoftwareengineer/techdegree-project-4/master/screenshot2.JPG)
 
-![image](https://raw.githubusercontent.com/onesoftwareengineer/techdegree-project-4/master/screenshot3.JPG)
 *user almost won and has 2 lifes left (2 additional guesses)*
+![image](https://raw.githubusercontent.com/onesoftwareengineer/techdegree-project-4/master/screenshot3.JPG)
 
 ## Additional details on how it works
 Using JavaScript, two JavaScript classes with specific properties and methods are created. 
