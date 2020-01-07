@@ -1,8 +1,23 @@
-# techdegree project 4
+## Phrase Hunter Game
+Browser-based, JavaScript and OOP (Object-Oriented Programming) word guessing game.
+A random hidden phrase is selected which the player tries to guess by clicking letters.
 
-The project is a browser-based, word guessing game: "Phrase Hunter." JavaScript and OOP (Object-Oriented Programming) is used to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard.
+## Technologies
+JavaScript OOP (Object-Oriented Programming), HTML, CSS
 
-Using JavaScript, two JavaScript classes with specific properties and methods are created. A Game class is created for managing the game, and a Phrase class to help with creating an array of Phrase objects.
+## Screenshots
+![image](https://raw.githubusercontent.com/onesoftwareengineer/techdegree-project-4/master/screenshot1.JPG)
+*first screen after game is started and a random hidden phrase is generated*
+
+![image](https://raw.githubusercontent.com/onesoftwareengineer/techdegree-project-4/master/screenshot2.JPG)
+*user tries to guess letters of the hidden app*
+
+![image](https://raw.githubusercontent.com/onesoftwareengineer/techdegree-project-4/master/screenshot3.JPG)
+*user almost won and has 2 lifes left (2 additional guesses)*
+
+## Additional details on how it works
+Using JavaScript, two JavaScript classes with specific properties and methods are created. 
+A Game class is created for managing the game, and a Phrase class to help with creating an array of Phrase objects.
 
 The code chooses a random phrase, splits the phrase into letters, and puts those letters onto the gameboard.
 Each time the player guesses a letter, the program compares the letter the player has chosen with the random phrase. 
@@ -13,11 +28,3 @@ If the player completes the phrase before they run out of guesses, a winning scr
 If the player guesses incorrectly five times, a losing screen appears.
 
 A player can guess a letter only once. After they’ve guessed a letter, that letter is disabled on the onscreen keyboard.
-
-
-Additional style changes from initial project specifications:
-game won overlay background color changed to #00A86B
-game lost overlay background color changed to #FA8072
-.chosen key class background color changed to #00A86B
-.wrong key background color changed to #FA8072
-.wrong key style with font striekthrough added
